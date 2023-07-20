@@ -12,7 +12,6 @@ export const MuiRadio = () => {
             <FormControl>
                 <FormLabel>Years of Experiance</FormLabel>
                 <RadioGroup name='job-experiance-group-label'
-                    aria-labeledby='job-experiance-group-label'
                     value={value}
                     onChange={handleChange}
                     row
