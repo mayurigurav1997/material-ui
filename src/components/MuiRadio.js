@@ -21,7 +21,6 @@ export const MuiRadio = () => {
                     <FormControlLabel control={<Radio />} label='6-8' value='6-8' />
                 </RadioGroup>
                 <FormHelperText>Select only one</FormHelperText>
-
             </FormControl>
         </Box>
     )

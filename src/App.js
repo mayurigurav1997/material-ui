@@ -7,6 +7,8 @@ import { MuiTypography } from "./components/MuiTypography";
 import { MuiSwitch } from './components/MuiSwitch';
 import { MuiRating } from './components/MuiRating';
 import { MuiAutoComplete, MuiAutocomplete } from './components/MuiAutoComplete';
+import { MuiBox } from './components/MuiBox';
+import { Form } from './components/Form';
 
 
 function App() {
@@ -20,7 +22,9 @@ function App() {
       {/* <MuiCheckbox /> */}
       {/* <MuiSwitch /> */}
       {/* <MuiRating /> */}
-      <MuiAutoComplete />
+      {/* <MuiAutoComplete /> */}
+      {/* <MuiBox /> */}
+      <Form />
     </div>
   );
 }
