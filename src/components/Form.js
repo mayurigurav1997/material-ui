@@ -1,12 +1,12 @@
 import React from 'react'
-import { Box, Paper, Stack, TextField, FormLabel, Grid, Typography, FormControl, RadioGroup, FormControlLabel, FormHelperText, Radio, Rating, Select, InputLabel, MenuItem } from '@mui/material';
+import { Box, Paper, Stack, TextField, FormLabel, Grid, Typography, FormControl, RadioGroup, FormControlLabel, FormHelperText, Radio, Rating, Select, InputLabel, MenuItem, FormGroup, Checkbox } from '@mui/material';
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 
 export const Form = () => {
     return (
         <Paper >
-            <Box border='1px solid' sx={{ mx: 'auto', width: '95%' }}>
+            <Box  sx={{ mx: 'auto', width: '95%' }}>
                 <Typography variant='h3' align='center' gutterBottom>Personal Info</Typography>
                 <Grid container rowSpacing={{ xs: 3, md: 5 }} columnSpacing={{ xs: 2, sm: 4, md: 5 }}
                 >
@@ -33,9 +33,9 @@ export const Form = () => {
                         />
                     </Grid>
                     <Grid item sm={6} xs={12} >
-                        <Typography component='h3' gutterBottom>Title:</Typography>
+                        <Typography component='h3' gutterBottom>Job Title:</Typography>
                         <FormControl fullWidth size="small">
-                            <InputLabel id="demo-simple-select-label">Title</InputLabel>
+                            <InputLabel id="demo-simple-select-label">title</InputLabel>
                             <Select
                                 labelId="demo-simple-select-label"
                                 id="demo-simple-select"
@@ -43,9 +43,11 @@ export const Form = () => {
                                 label="Age"
                             // onChange={handleChange}
                             >
-                                <MenuItem value={10}>Ten</MenuItem>
-                                <MenuItem value={20}>Twenty</MenuItem>
-                                <MenuItem value={30}>Thirty</MenuItem>
+                                <MenuItem value={"Manager"}>Manager</MenuItem>
+                                <MenuItem value={"Team Leader"}>Team Leader</MenuItem>
+                                <MenuItem value={"Sr. Product Developer"}>Sr. Product Developer</MenuItem>
+                                <MenuItem value={"Jr. Product Developer"}>Jr. Product Developer</MenuItem>
+                                <MenuItem value={"Other"}>Other</MenuItem>
                             </Select>
                         </FormControl>
                     </Grid>
@@ -70,6 +72,54 @@ export const Form = () => {
                             size='small'
                             fullWidth
                         />
+                    </Grid>
+                    <Grid item xs={12} sm={12} md={7}>
+                        <Typography component='h3' gutterBottom>Skills:</Typography>
+                        <FormControl>
+                            {/* <FormLabel>Skills</FormLabel> */}
+                            <FormGroup row>
+                                <FormControlLabel
+                                    control={
+                                        <Checkbox
+                                            value='html'
+                                            // checked={skills.includes('html')}
+                                            // onChange={handleSkillChange}
+                                        />
+                                    }
+                                    label='HTML'
+                                />
+                                <FormControlLabel
+                                    control={
+                                        <Checkbox
+                                            // value='css'
+                                            // checked={skills.includes('css')}
+                                            // onChange={handleSkillChange}
+                                        />
+                                    }
+                                    label='CSS'
+                                />
+                                <FormControlLabel
+                                    control={
+                                        <Checkbox
+                                            // value='javascript'
+                                            // checked={skills.includes('javascript')}
+                                            // onChange={handleSkillChange}
+                                        />
+                                    }
+                                    label='JavaScript'
+                                />
+                                <FormControlLabel
+                                    control={
+                                        <Checkbox
+                                            // value='javascript'
+                                            // checked={skills.includes('javascript')}
+                                            // onChange={handleSkillChange}
+                                        />
+                                    }
+                                    label='ReactJS'
+                                />
+                            </FormGroup>
+                        </FormControl>
                     </Grid>
                     <Grid item xs={12} sm={12} md={7}>
                         <FormControl>
