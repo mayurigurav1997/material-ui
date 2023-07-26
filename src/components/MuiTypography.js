@@ -8,7 +8,7 @@ export const MuiTypography = () => {
             <Typography variant='h2'>h2 Heading</Typography>
             <Typography variant='h3' gutterBottom>h3 Heading</Typography>
             <Typography variant='h4' component=''>h4 Heading</Typography>
-            <h1Typography variant='h5'>h5 Heading</h1Typography>
+            <Typography variant='h5'>h5 Heading</Typography>
             <Typography variant='h6'>h6 Heading</Typography>
             <Typography variant='subtitle1'>Subtitle 1</Typography>
             <Typography variant='subtitle2'>Subtitle 2</Typography>
