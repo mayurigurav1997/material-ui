@@ -11,6 +11,7 @@ import { MuiLayout } from "./components/MuiLayout";
 import { MuiCard } from "./components/MuiCard";
 import { MuiAccordion } from "./components/MuiAccordian";
 import DropdownWithPlaceholderOutlined from "./components/DropdownWithPlaceholderOutlined";
+import { MuiImageList } from "./components/MuiImageList";
 
 
 function App() {
@@ -28,7 +29,7 @@ function App() {
       {/* <MuiLayout /> */}
       {/* <MuiCard /> */}
       {/* <MuiAccordion /> */}
-      <DropdownWithPlaceholderOutlined />
+      <MuiImageList />
     </div>
   );
 }
