@@ -10,6 +10,7 @@ import { MuiAutoComplete, MuiAutocomplete } from './components/MuiAutoComplete';
 import { MuiLayout } from "./components/MuiLayout";
 import { MuiCard } from "./components/MuiCard";
 import { MuiAccordion } from "./components/MuiAccordian";
+import DropdownWithPlaceholderOutlined from "./components/DropdownWithPlaceholderOutlined";
 
 
 function App() {
@@ -26,7 +27,8 @@ function App() {
       {/* <MuiAutoComplete /> */}
       {/* <MuiLayout /> */}
       {/* <MuiCard /> */}
-      <MuiAccordion />
+      {/* <MuiAccordion /> */}
+      <DropdownWithPlaceholderOutlined />
     </div>
   );
 }
