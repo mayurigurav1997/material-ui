@@ -14,6 +14,7 @@ import DropdownWithPlaceholderOutlined from "./components/DropdownWithPlaceholde
 import { MuiImageList } from "./components/MuiImageList";
 import { MuiNavbar } from "./components/MuiNavbar";
 import { MuiLink } from "./components/MuiLink";
+import { MuiBreadcrumbs } from "./components/MuiBreadcrumbs";
 
 
 function App() {
@@ -33,7 +34,8 @@ function App() {
       {/* <MuiAccordion /> */}
       {/* <MuiImageList /> */}
       {/* <MuiNavbar /> */}
-      <MuiLink />
+      {/* <MuiLink /> */}
+      <MuiBreadcrumbs />
 
     </div>
   );
