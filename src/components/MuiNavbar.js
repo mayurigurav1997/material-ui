@@ -46,7 +46,25 @@ export const MuiNavbar = () => {
                     </Button>
                     <Button color='inherit'>Login</Button>
                 </Stack>
-
+                <Menu
+                    id='resources-menu'
+                    anchorEl={anchorEl}
+                    open={open}
+                    onClose={handleClose}
+                    anchorOrigin={{
+                        vertical: 'bottom',
+                        horizontal: 'right'
+                    }}
+                    transformOrigin={{
+                        vertical: 'top',
+                        horizontal: 'right'
+                    }}
+                    MenuListProps={{
+                        'aria-labelledby': 'resources-button'
+                    }}>
+                    <MenuItem onClick={handleClose}>Blog</MenuItem>
+                    <MenuItem onClick={handleClose}>Podcast</MenuItem>
+                </Menu>
             </Toolbar>
         </AppBar>
     )
