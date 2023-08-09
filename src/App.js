@@ -16,7 +16,7 @@ import { MuiNavbar } from "./components/MuiNavbar";
 import { MuiLink } from "./components/MuiLink";
 import { MuiBreadcrumbs } from "./components/MuiBreadcrumbs";
 import MuiDropdown from "./components/MuiDropdown";
-import { POC } from "./components/POC";
+import POC from "./components/POC";
 
 
 function App() {
