@@ -92,6 +92,39 @@ function POC() {
               </FormHelperText>
             )}
           </Grid>
+
+        </Grid>
+        <Grid container lg={7} justifyContent="space-between" item direction="row">
+          <Grid item>
+            <Typography variant="h6" >
+              Company:
+            </Typography>
+          </Grid>
+          <Grid item>
+            <RadioGroup row aria-label="gender" name="gender" >
+              <FormControlLabel
+                value="male"
+                control={<Radio {...register('gender', { required: 'Gender is required' })} />}
+                label="Male"
+              />
+              <FormControlLabel
+                value="female"
+                control={<Radio {...register('gender', { required: 'Gender is required' })} />}
+                label="Female"
+              />
+              <FormControlLabel
+                value="other"
+                control={<Radio {...register('gender', { required: 'Gender is required' })} />}
+                label="Other"
+              />
+            </RadioGroup>
+            {errors.gender && (
+              <FormHelperText error>
+                {errors.gender.message}
+              </FormHelperText>
+            )}
+          </Grid>
+
         </Grid>
         <Grid item lg={7}>
           <Button type="submit">Submit</Button>
