@@ -8,7 +8,17 @@ import { MuiSwitch } from './components/MuiSwitch';
 import { MuiRating } from './components/MuiRating';
 import { MuiAutoComplete, MuiAutocomplete } from './components/MuiAutoComplete';
 import { MuiBox } from './components/MuiBox';
-import { Form } from './components/Form';
+// import { Form } from './components/Form';
+import { MuiLayout } from "./components/MuiLayout";
+import { MuiCard } from "./components/MuiCard";
+import { MuiAccordion } from "./components/MuiAccordian";
+import DropdownWithPlaceholderOutlined from "./components/DropdownWithPlaceholderOutlined";
+import { MuiImageList } from "./components/MuiImageList";
+import { MuiNavbar } from "./components/MuiNavbar";
+import { MuiLink } from "./components/MuiLink";
+import { MuiBreadcrumbs } from "./components/MuiBreadcrumbs";
+import MuiDropdown from "./components/MuiDropdown";
+import POC from "./components/POC";
 
 
 function App() {
@@ -23,8 +33,16 @@ function App() {
       {/* <MuiSwitch /> */}
       {/* <MuiRating /> */}
       {/* <MuiAutoComplete /> */}
-      {/* <MuiBox /> */}
-      <Form />
+      {/* <MuiLayout /> */}
+      {/* <MuiCard /> */}
+      {/* <MuiAccordion /> */}
+      {/* <MuiImageList /> */}
+      {/* <MuiNavbar /> */}
+      {/* <MuiLink /> */}
+      {/* <MuiBreadcrumbs /> */}
+      {/* <MuiDropdown /> */}
+      <POC />
+
     </div>
   );
 }
