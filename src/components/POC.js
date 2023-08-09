@@ -1,6 +1,6 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { TextField, Button, Grid, RadioGroup, FormControlLabel, FormHelperText, Radio, Typography } from '@mui/material';
+import { TextField, Button, Grid, RadioGroup, FormControlLabel, FormHelperText, Radio, Typography, FormControl, Select, MenuItem, InputLabel } from '@mui/material';
 
 function POC() {
 
@@ -97,32 +97,30 @@ function POC() {
         <Grid container lg={7} justifyContent="space-between" item direction="row">
           <Grid item>
             <Typography variant="h6" >
-              Company:
+              Country:
             </Typography>
           </Grid>
           <Grid item>
-            <RadioGroup row aria-label="gender" name="gender" >
-              <FormControlLabel
-                value="male"
-                control={<Radio {...register('gender', { required: 'Gender is required' })} />}
-                label="Male"
-              />
-              <FormControlLabel
-                value="female"
-                control={<Radio {...register('gender', { required: 'Gender is required' })} />}
-                label="Female"
-              />
-              <FormControlLabel
-                value="other"
-                control={<Radio {...register('gender', { required: 'Gender is required' })} />}
-                label="Other"
-              />
-            </RadioGroup>
-            {errors.gender && (
+            <Select
+              sx={{ width: "200px" }}
+              // size="medium"
+              label="Country"
+              {...register('country', { required: 'Country is required' })}
+              error={!!errors.country}
+              labelId="country-select"
+            // value={Country}
+            >
+              <MenuItem value="us">United States</MenuItem>
+              <MenuItem value="ca">Canada</MenuItem>
+              <MenuItem value="uk">United Kingdom</MenuItem>
+              <MenuItem value="au">Australia</MenuItem>
+            </Select>
+            {errors.country && (
               <FormHelperText error>
-                {errors.gender.message}
+                {errors.country.message}
               </FormHelperText>
             )}
+
           </Grid>
 
         </Grid>
