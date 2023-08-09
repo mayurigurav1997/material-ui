@@ -127,7 +127,7 @@ function POC() {
 
         </Grid>
         <Grid item lg={7}>
-          <Button type="submit">Submit</Button>
+          <Button type="submit" variant="contained" size="medium">Submit</Button>
         </Grid>
       </Grid>
     </form>
