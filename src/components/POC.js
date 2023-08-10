@@ -1,6 +1,6 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { TextField, Button, Grid, RadioGroup, FormControlLabel, FormHelperText, Radio, Typography } from '@mui/material';
+import { TextField, Button, Grid, RadioGroup, FormControlLabel, FormHelperText, Radio, Typography, FormControl, Select, MenuItem, InputLabel } from '@mui/material';
 
 function POC() {
 
@@ -92,9 +92,40 @@ function POC() {
               </FormHelperText>
             )}
           </Grid>
+
+        </Grid>
+        <Grid container lg={7} justifyContent="space-between" item direction="row">
+          <Grid item>
+            <Typography variant="h6" >
+              Country:
+            </Typography>
+          </Grid>
+          <Grid item>
+            <Select
+              sx={{ width: "200px" }}
+              // size="medium"
+              label="Country"
+              {...register('country', { required: 'Country is required' })}
+              error={!!errors.country}
+              labelId="country-select"
+            // value={Country}
+            >
+              <MenuItem value="us">United States</MenuItem>
+              <MenuItem value="ca">Canada</MenuItem>
+              <MenuItem value="uk">United Kingdom</MenuItem>
+              <MenuItem value="au">Australia</MenuItem>
+            </Select>
+            {errors.country && (
+              <FormHelperText error>
+                {errors.country.message}
+              </FormHelperText>
+            )}
+
+          </Grid>
+
         </Grid>
         <Grid item lg={7}>
-          <Button type="submit">Submit</Button>
+          <Button type="submit" variant="contained" size="medium">Submit</Button>
         </Grid>
       </Grid>
     </form>
