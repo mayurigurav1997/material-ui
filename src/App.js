@@ -39,7 +39,7 @@ function App() {
       {/* <MuiLink /> */}
       {/* <MuiBreadcrumbs /> */}
       {/* <MuiDropdown /> */}
-      <POC />
+      {/* <POC /> */}
 
     </div>
   );
