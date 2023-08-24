@@ -20,6 +20,7 @@ import { MuiBreadcrumbs } from "./components/MuiBreadcrumbs";
 import MuiDropdown from "./components/MuiDropdown";
 import POC from "./components/POC";
 import { MuiDrawer } from "./components/MuiDrawer";
+import { MuiSpeedDial } from "./components/MuiSpeedDial";
 
 
 function App() {
@@ -43,7 +44,8 @@ function App() {
       {/* <MuiBreadcrumbs /> */}
       {/* <MuiDropdown /> */}
       {/* <POC /> */}
-      <MuiDrawer />
+      {/* <MuiDrawer /> */}
+      <MuiSpeedDial />
 
     </div>
   );
