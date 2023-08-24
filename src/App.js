@@ -22,6 +22,7 @@ import POC from "./components/POC";
 import { MuiDrawer } from "./components/MuiDrawer";
 import { MuiSpeedDial } from "./components/MuiSpeedDial";
 import { MuiBottomNavigation } from "./components/MuiBottomNavigation";
+import { MuiAvatar } from "./components/MuiAvatar";
 
 
 function App() {
@@ -47,7 +48,8 @@ function App() {
       {/* <POC /> */}
       {/* <MuiDrawer /> */}
       {/* <MuiSpeedDial /> */}
-      <MuiBottomNavigation />
+      {/* <MuiBottomNavigation /> */}
+      <MuiAvatar />
 
     </div>
   );
