@@ -30,6 +30,7 @@ import { MuiTooltip } from "./components/MuiTooltip";
 import { MuiTable } from "./components/MuiTable";
 import { MuiAlert } from "./components/MuiAlert";
 import { MuiSnackbar } from "./components/MuiSnackbar";
+import { MuiDialog } from "./MuiDialog";
 
 
 function App() {
@@ -63,7 +64,8 @@ function App() {
       {/* <MuiTooltip /> */}
       {/* <MuiTable /> */}
       {/* <MuiAlert /> */}
-      <MuiSnackbar />
+      {/* <MuiSnackbar /> */}
+      <MuiDialog />
 
     </div>
   );
