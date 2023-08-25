@@ -7,8 +7,8 @@ export const MuiTooltip = () => {
             title='Delete'
             placement='right'
             arrow
-            enterDelay={500}
-            leaveDelay={200}>
+            enterDelay={200}
+            leaveDelay={700}>
             <IconButton>
                 <DeleteIcon />
             </IconButton>
